@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: profile-config-map
+data:
+
+  DB_HOST: "mongo-profile"
+  DB_URL: "mongodb://mongo-profile:27017/"
