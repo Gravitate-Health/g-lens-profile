@@ -12,15 +12,13 @@ export class Profile extends Entity {
 
   @property({
     type: 'date',
-    required: true,
   })
-  birth: string;
+  birth?: string;
 
   @property({
     type: 'string',
-    required: true,
   })
-  sex: string;
+  sex?: string;
 
   @property({
     type: 'any',
@@ -41,35 +39,30 @@ export class Profile extends Entity {
   @property({
     type: 'array',
     itemType: 'string',
-    required: true,
   })
-  allergies: any[];
+  allergies?: any[];
 
   @property({
     type: 'array',
     itemType: 'string',
-    required: true,
   })
-  diagnoses: any[];
+  diagnoses?: any[];
 
   @property({
     type: 'array',
     itemType: 'string',
-    required: true,
   })
-  medicines: any[];
+  medicines?: any[];
 
   @property({
     type: 'any',
-    required: true,
   })
-  howToMedication: any;
+  howToMedication?: any;
 
   @property({
     type: 'any',
-    required: true,
   })
-  whyTakeMedication: any;
+  whyTakeMedication?: any;
 
 
   constructor(data?: Partial<Profile>) {
